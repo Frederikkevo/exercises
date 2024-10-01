@@ -1,3 +1,4 @@
+/* Reset for margin og padding */
 * {
     margin: 0;
     padding: 0;
@@ -6,18 +7,34 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8f7; /* Lys beige */
+    background-color: #f0f8f7;
     color: #333;
     text-align: center;
 }
 
-section {
-    padding: 40px;
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-h1, h2 {
-    color: #38a3a5; /* Mørkere grøn */
-    font-size: 2.5em;
+/* Styling af main indhold */
+main {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Skaber dybde med skygger */
+    padding: 40px;
+    max-width: 500px;
+    width: 90%;
+}
+
+
+.guess-box {
+    padding: 20px;
+    border: 2px solid #38a3a5; 
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -41,6 +58,13 @@ button:disabled {
     cursor: not-allowed;
 }
 
+/* Container til knapperne */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Footer styling */
 footer {
     background-color: #38a3a5;
     color: white;

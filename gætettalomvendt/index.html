@@ -7,19 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
+    <section class="game-container">
       <main>
         <h1>Tænk på et tal mellem 0 og 100</h1>
         <h3>Computeren vil nu prøve at gætte dit tal</h3>
         <button id="startButton">Start spil</button>
         <div id="game" style="display: none">
-          <h2>Computeren gætter: <span id="computerGuess">...</span></h2>
-          <h3 id="feedback"></h3>
-          <button id="higher" disabled>For lavt</button>
-          <button id="lower" disabled>For højt</button>
-          <button id="correct" disabled>Korrekt</button>
+          <div class="guess-box">
+            <h2>Computeren gætter: <span id="computerGuess">...</span></h2>
+            <h3 id="feedback"></h3>
+          </div>
+          <div class="buttons">
+            <button id="higher" disabled>For lavt</button>
+            <button id="lower" disabled>For højt</button>
+            <button id="correct" disabled>Korrekt</button>
+          </div>
           <h3 id="attempts"></h3>
         </div>
+        <button id="restartButton" style="display: none">Genstart spil</button>
       </main>
     </section>
 
