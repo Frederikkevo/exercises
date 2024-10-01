@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gæt et tal - Computeren Gætter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <main>
+        <h1>Tænk på et tal mellem 0 og 100</h1>
+        <h3>Computeren vil nu prøve at gætte dit tal</h3>
+        <button id="startButton">Start spil</button>
+        <div id="game" style="display: none">
+          <h2>Computeren gætter: <span id="computerGuess">...</span></h2>
+          <h3 id="feedback"></h3>
+          <button id="higher" disabled>For lavt</button>
+          <button id="lower" disabled>For højt</button>
+          <button id="correct" disabled>Korrekt</button>
+          <h3 id="attempts"></h3>
+        </div>
+      </main>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Frederikke Volkdal</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
