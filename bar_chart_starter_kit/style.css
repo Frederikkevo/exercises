@@ -1,0 +1,26 @@
+ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    gap: 1ch;
+    block-size: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    inline-size: 3ch;
+    height: calc(var(--height) * 1px);
+    background: color-mix(in hsl, rgb(219, 112, 236), rgb(115, 192, 224) calc(var(--height) * 1%));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui;
+    line-height: 1.5;
+    margin: 0;
+    padding: 2rlh;
+}
