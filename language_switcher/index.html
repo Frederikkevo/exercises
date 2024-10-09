@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprogskifter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="js.js"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Switcher</title>
-    <script type="module" src="js.js"></script>
-</head>
+  <body>
+    <div class="container">
+      <header class="header">UDSKIFTES</header>
+      <p class="content">Content</p>
+      <footer class="footer">UDSKIFTES</footer>
 
-<body>
-    <header class="header">UDSKIFTES</header>
-    <p>Content</p>
-    <div class="footer">UDSKIFTES</div>
-
-</body>
-
+      <!-- Sprogvælger -->
+      <div class="language-switcher">
+        <label for="language-select">Vælg sprog:</label>
+        <select id="language-select">
+          <option value="da">Dansk</option>
+          <option value="de">Tysk</option>
+        </select>
+      </div>
+    </div>
+  </body>
 </html>
