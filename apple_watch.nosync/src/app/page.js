@@ -1,3 +1,5 @@
+"use client";
+
 import NavMenuFull from "@/components/NavMenuFull"
 import ContentFull from "@/components/ContentFull"
 import FooterFull from "@/components/FooterFull"
